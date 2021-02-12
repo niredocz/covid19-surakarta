@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);
-
 .fa,
 .fab,
 .fad,
@@ -38944,7 +38943,7 @@ html body .navbar-dark .mailbox .message-center a .mail-contnet .time {
 @media (min-width: 1024px) {
   .footer,
   .page-wrapper {
-    margin-left: 220px;
+    /* margin-left: 220px; */
   }
 }
 @media (max-width: 1023px) {
