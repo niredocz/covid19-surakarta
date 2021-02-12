@@ -1,7 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700); /*!
- * Font Awesome Free 5.11.2 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- */
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);
+
 .fa,
 .fab,
 .fad,
@@ -37942,7 +37940,7 @@ html body .waves-notransition {
 }
 .fixed-sidebar.mini-sidebar .footer,
 .fixed-sidebar.mini-sidebar .navbar-collapse {
-  margin-left: 70px;
+  /* margin-left: 70px; */
 }
 @media (max-width: 767px) {
   .fixed-sidebar.mini-sidebar .navbar-header {
@@ -37999,7 +37997,7 @@ html body .waves-notransition {
   }
   .mini-sidebar .footer,
   .mini-sidebar .page-wrapper {
-    margin-left: 70px;
+    /* margin-left: 70px; */
   }
   .mini-sidebar .left-sidebar {
     width: 70px;
