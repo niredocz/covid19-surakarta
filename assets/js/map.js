@@ -1,4 +1,4 @@
-var mymap = L.map('mapid').setView([-7.57110295267244, 110.82622065004949], 13);
+var mymap = L.map('mapid').setView([-7.57110295267244, 110.82622065004949], 14);
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: '&copy; Data Covid-19 Kota Surakarta 2021',
     maxZoom: 18,
