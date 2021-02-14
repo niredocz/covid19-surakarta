@@ -98,6 +98,15 @@ table.data-kecamatan {
   overflow-y: auto;
 }
 
+.kelurahan-list::-webkit-scrollbar {
+  width: 5px;
+  background-color: #ddd;
+}
+
+.kelurahan-list::-webkit-scrollbar-thumb {
+  background-color: #747474;
+}
+
 #card-kelurahan {
   display: flex;
   flex-direction: row;
