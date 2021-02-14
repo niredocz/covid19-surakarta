@@ -84,8 +84,7 @@ const basic_option = {
                             },
                             headingText: this.series.name,
                             maincontentText: Highcharts.dateFormat('%A, %b %e, %Y', this.x) + ':<br/> ' +
-                                this.y + ' sessions',
-                            width: 200
+                                this.y + ' sessions'
                         });
                     }
                 }
@@ -106,8 +105,7 @@ const basic_option = {
         name: 'New users'
     }]
 }
-$('#highchart-1').highcharts(basic_option);
-$('#highchart-2').highcharts(basic_option);
+$('#highchart').highcharts(basic_option);
 
 // pie charts //
 const options = {
