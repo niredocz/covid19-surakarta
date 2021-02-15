@@ -15,11 +15,11 @@ const chart_initial = {
     },
 
     title: {
-        text: 'Data Covid-19 Kota Surakarta'
+        text: 'DATA COVID-19 KOTA SURAKARTA'
     },
 
     subtitle: {
-        text: 'sumber: surakarta.go.id'
+        text: 'sumber: www.surakarta.go.id'
     },
 
     xAxis: {
