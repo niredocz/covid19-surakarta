@@ -1,9 +1,9 @@
 // basic-bar charts //
-const basic_option = {
+const chart_initial = {
 
     chart: {
         scrollablePlotArea: {
-            minWidth: 700
+            // maxWidth: 700
         }
     },
 
@@ -105,10 +105,10 @@ const basic_option = {
         name: 'New users'
     }]
 }
-$('#highchart').highcharts(basic_option);
+$('#highchart').highcharts(chart_initial);
 
-// pie charts //
-const options = {
+// pie charts (belum kepake)//
+const pie_initial = {
     title: {
         text: ' '
     },
@@ -131,5 +131,5 @@ const options = {
         showInLegend: true
     }]
 }
-$('#kelurahan-chart-1').highcharts(options);
-$('#kelurahan-chart-2').highcharts(options);
+$('#kelurahan-chart-1').highcharts(pie_initial);
+$('#kelurahan-chart-2').highcharts(pie_initial);
