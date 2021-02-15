@@ -2,10 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Dashboard Covid19 Surakarta</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Dashboard statistik Covid-19 kota Surakarta tahun 2021" name="description"/>
+    <meta content="data-covid-19-surakarta" name="author"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <title>Dashboard Statistik | Data Covid-19 Kota Surakarta tahun 2021</title>
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets_dashboard/images/favicon.ico">
 
     <!-- leaflet library -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -21,13 +27,13 @@
     <link rel="stylesheet" type="text/css" href="https://www.highcharts.com/samples/static/highslide.css" />
 
     <!-- datatables initial -->
-    <link rel="stylesheet" href="assets/css/datatables/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="assets_dashboard/css/datatables/jquery.dataTables.min.css">
 
     <!-- custom css -->
-    <link rel="stylesheet" href="assets/css/dashboard4.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets_dashboard/css/dashboard4.css">
+    <link rel="stylesheet" href="assets_dashboard/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets_dashboard/css/style.css" />
+    <link rel="stylesheet" href="assets_dashboard/css/index.css">
 
 </head>
 
@@ -41,7 +47,7 @@
                         <div class="row">
                             <div class="col-12 col-md-8 align-self-center header-col">
                                 <h2 class="font-medium mb-0">
-                                    <img src="assets/images/logo_surakarta.png" class="logo-wrapper" alt="logo-surakarta">
+                                    <img src="assets_dashboard/images/logo_surakarta.png" class="logo-wrapper" alt="logo-surakarta">
                                     DATA COVID-19 KOTA SURAKARTA
                                 </h2>
                             </div>
@@ -726,37 +732,34 @@
         <!-- <footer class="footer">© Data Covid-19 Kota Surakarta</footer> -->
     </div>
 
-    <script src="assets/js/jquery/jquery-3.5.1.min.js"></script>
-    <script src="assets/js/bootstrap/popper.min.js"></script>
-    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="assets_dashboard/js/jquery/jquery-3.5.1.min.js"></script>
+    <script src="assets_dashboard/js/bootstrap/popper.min.js"></script>
+    <script src="assets_dashboard/js/bootstrap/bootstrap.min.js"></script>
     
     <!-- leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
-    <script src="assets/js/map.js"></script>
+    <script src="assets_dashboard/js/map.js"></script>
 
     <!-- highchart init -->
-    <script src="assets/js/highcharts/modules/highcharts.js"></script>
-    <script src="assets/js/highcharts/modules/data.js"></script>
-    <script src="assets/js/highcharts/modules/series-label.js"></script>
-    <script src="assets/js/highcharts/modules/exporting.js"></script>
-    <script src="assets/js/highcharts/modules/export-data.js"></script>
-    <script src="assets/js/highcharts/modules/accessibility.js"></script>
-    <script src="assets/js/highcharts/highchart.js"></script>
+    <script src="assets_dashboard/js/highcharts/modules/highcharts.js"></script>
+    <script src="assets_dashboard/js/highcharts/modules/data.js"></script>
+    <script src="assets_dashboard/js/highcharts/modules/series-label.js"></script>
+    <script src="assets_dashboard/js/highcharts/modules/exporting.js"></script>
+    <script src="assets_dashboard/js/highcharts/modules/export-data.js"></script>
+    <script src="assets_dashboard/js/highcharts/modules/accessibility.js"></script>
+    <script src="assets_dashboard/js/highcharts/highchart.js"></script>
 
     <!-- dataTables -->
-    <script src="assets/js/datatables/dataTables.min.js"></script>
-    <script>
+    <script src="assets_dashboard/js/datatables/dataTables.min.js"></script>
+    <script type="text/javascript">
         $(document).ready(function() {
             document.body.style.zoom = "90%";
             $('#datatable').DataTable({
                 responsive: true
             });
         } );
-    </script>
-    <script type="text/javascript">
-        
     </script>
 </body>
 
