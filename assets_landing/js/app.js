@@ -1,15 +1,9 @@
-/* Template Name: Ubold - Bootstrap 4 Landing Page Tamplat
-   Author: CoderThemes
-   File Description: Main JS file of the template
-*/
-
-
 ! function($) {
     "use strict";
 
-    var Ubold = function() {};
+    var Covid = function() {};
 
-    Ubold.prototype.initStickyMenu = function() {
+    Covid.prototype.initStickyMenu = function() {
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
         
@@ -21,7 +15,7 @@
         });
     },
 
-    Ubold.prototype.initSmoothLink = function() {
+    Covid.prototype.initSmoothLink = function() {
         $('.navbar-nav a').on('click', function(event) {
             var $anchor = $(this);
             $('html, body').stop().animate({
@@ -31,13 +25,13 @@
         });
     },
 
-    Ubold.prototype.initScrollspy = function() {
+    Covid.prototype.initScrollspy = function() {
         $("#navbarCollapse").scrollspy({
             offset: 50
         });
     },
 
-    Ubold.prototype.initContact = function() {
+    Covid.prototype.initContact = function() {
         
         $('#contact-form').submit(function() {
 
@@ -73,7 +67,7 @@
         });
     },
 
-    Ubold.prototype.initBacktoTop = function() {
+    Covid.prototype.initBacktoTop = function() {
         $(window).scroll(function(){
             if ($(this).scrollTop() > 100) {
                 $('.back-to-top').fadeIn();
@@ -88,7 +82,7 @@
     },
 
 
-    Ubold.prototype.init = function() {
+    Covid.prototype.init = function() {
         this.initStickyMenu();
         this.initSmoothLink();
         this.initScrollspy();
@@ -96,11 +90,11 @@
         this.initBacktoTop();
     },
     //init
-    $.Ubold = new Ubold, $.Ubold.Constructor = Ubold
+    $.Covid = new Covid, $.Covid.Constructor = Covid
 }(window.jQuery),
 
 //initializing
 function($) {
     "use strict";
-    $.Ubold.init();
+    $.Covid.init();
 }(window.jQuery);
