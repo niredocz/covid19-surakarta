@@ -1,0 +1,70 @@
+.bg-home {
+  padding: 10em 0 6em 0;
+}
+
+.bg-theme {
+  background: #d62f24;
+}
+
+.nav-sticky.navbar-custom .navbar-nav .nav-item.active .nav-link {
+  color: #000;
+}
+.nav-sticky.navbar-custom .navbar-nav .nav-item .nav-link:hover,
+.nav-sticky.navbar-custom .navbar-nav .nav-item .nav-link:active {
+  color: #000;
+}
+
+nav.navbar .logo-title {
+  color: #fff;
+  transition: 0.3s;
+}
+.nav-sticky.navbar-custom .logo-title {
+  color: #000;
+}
+
+.card .card-body {
+  padding: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+#beranda .home-center .home-desc-center .row,
+.navbar a.logo.row {
+  margin-left: 0;
+}
+
+#berita .berita-title {
+  margin-bottom: 1em;
+  margin-top: -1em;
+  display: flex;
+  justify-content: center;
+}
+
+#berita .card .card-img-top {
+  height: 15em;
+}
+
+#berita .card .card-body .berita-content {
+  height: 6em;
+  text-align: justify;
+  line-height: 2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+
+  /* number of lines to show */
+  -webkit-line-clamp: 3;
+}
+
+#berita .card .card-body a.btn {
+  width: 75%;
+  margin: 0 30px;
+}
+
+.footer-surakarta {
+  margin-bottom: 3em;
+}
+.back-to-top {
+  background: #00a8ff;
+}
