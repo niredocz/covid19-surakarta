@@ -12,6 +12,9 @@
 
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets_landing/images/weblogo.svg">
+    <!-- Datatable library css -->
+    <link rel="stylesheet" href="assets_landing/css/twitter-bootstrap4.css">
+    <link rel="stylesheet" href="assets_landing/css/dataTables.bootstrap4.css">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="assets_landing/css/bootstrap.min.css" type="text/css">
     <!--Material Icon -->
@@ -50,7 +53,10 @@
                         <a href="#bansos" class="nav-link">Bantuan Sosial</a>
                     </li>
                 </ul>
-                <a href="dashboard.html" class="btn btn-dark navbar-btn">Kunjungi Dashboard</a>
+                <a href="tel:123-456-789" class="btn navbar-btn">
+                    <i class="mdi mdi-phone mr-1"></i>
+                    Layanan Darurat
+                </a>
             </div>
         </div>
     </nav>
@@ -65,7 +71,8 @@
                         <div class="col-12 col-md-5 col-lg-6">
                             <div class="home-title mo-mb-20">
                                 <h1 class="mb-3 text-white">Pusat Informasi & Koordinasi Penyebaran COVID-19 Kota Surakarta</h1>
-                                <p class="text-white home-desc mb-4">Menyediakan informasi terkini seputar penyebaran virus covid-19 di Kota Surakarta dan sekitarnya</p>
+                                <p class="text-white home-desc">Menyediakan informasi terkini seputar penyebaran virus COVID-19 di Kota Surakarta dan sekitarnya</p>
+                                <a href="dashboard.html" class="btn btn-outline-light w-75 font-weight-bold p-2 mb-4">Halaman Informasi COVID-19 Kota Surakarta</a>
                             </div>
                         </div>
                         <div class="d-none d-md-block col-md-6 col-lg-4 offset-lg-2 offset-md-1">
@@ -126,8 +133,8 @@
                                 <div class="row counter-wrapper">
                                     <div class="col-6">
                                         <div class="counter">
-                                            <h4>Perawatan</h4>
-                                            <span>6</span>
+                                            <h4>Discarded</h4>
+                                            <span>3019</span>
                                         </div>
                                     </div>
                                     <div class="col-6">
@@ -138,8 +145,8 @@
                                     </div>
                                     <div class="col-6">
                                         <div class="counter">
-                                            <h4>Discarded</h4>
-                                            <span>3019</span>
+                                            <h4>Perawatan</h4>
+                                            <span>6</span>
                                         </div>
                                     </div>
                                     <div class="col-6">
@@ -171,8 +178,8 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="counter">
-                                            <h4>Perawatan</h4>
-                                            <span>3019</span>
+                                            <h4>Meninggal</h4>
+                                            <span>30</span>
                                         </div>
                                     </div>
                                 </div>
@@ -188,7 +195,7 @@
     <section class="section-sm bg-light" id="berita">
         <div class="container-fluid">
             <div class="berita-wrapper">
-                <h2 class="berita-title">Kolom Berita</h2>
+                <h2 class="berita-title">Berita Terbaru</h2>
                 <div class="row">
                     <div class="col-12 col-sm-6 col-md-4">
                         <div class="card">
@@ -196,7 +203,7 @@
                             <div class="card-body">
                                 <h4>Thermal Gun Aman Digunakan</h4>
                                 <p class="berita-content">Sejak pandemi COVID-19 berlangsung, melakukan pengecekan suhu di ruang publik sebagai tindakan preventif bagian dari penanganan COVID-19 sudah menjadi hal lumrah. Untuk mengurangi kontak fisik, maka penggunaan thermal gun yang diarahkan ke dahi juga sudah menjadi hal yang biasa dilihat.</p>
-                                <a href="#" class="btn btn-danger">Kunjungi Berita</a>
+                                <a href="#" class="btn btn-info">Kunjungi Berita</a>
                             </div>
                         </div>
                     </div>
@@ -206,7 +213,7 @@
                             <div class="card-body">
                                 <h4>Tempat Karantina Graha Wisata Ditutup, Pemudik Wajib Karantina di Rumah</h4>
                                 <p class="berita-content">Rumah karantina Graha Wisata yang disediakan Pemerintah Kota Surakarta khusus bagi pemudik, hari ini Jum’at (29/5/2020) resmi diakhiri.</p>
-                                <a href="#" class="btn btn-danger">Kunjungi Berita</a>
+                                <a href="#" class="btn btn-info">Kunjungi Berita</a>
                             </div>
                         </div>
                     </div>
@@ -216,7 +223,7 @@
                             <div class="card-body">
                                 <h4>Wali Kota, Wakil Wali Kota, Sekda dan Awak Media di Balai Kota Jalani Rapid Test</h4>
                                 <p class="berita-content">Rabu (27/5/2020) mulai jam 08.00 WIB bertempat di Gedung Dinas Kesehatan Kota Surakarta, Wali Kota, Wakil Wali Kota, Sekretaris Daerah beserta staf serta awak media yang bertugas di lingkungan balaikota dilakukan rapid test.</p>
-                                <a href="#" class="btn btn-danger">Kunjungi Berita</a>
+                                <a href="#" class="btn btn-info">Kunjungi Berita</a>
                             </div>
                         </div>
                     </div>
@@ -227,75 +234,77 @@
     <!-- berita section end -->
 
     <!-- FAQ section start -->
-    <section class="section bg-theme" id="faq">
+    <section class="section bg-theme pb-5" id="faq">
         <div class="container-fluid">
             <div class="card">
-                <div class="row justify-content-center pt-3">
-                    <div class="col-lg-6">
-                        <div class="text-center mb-5">
-                            <h2>Pertanyaan Seputar COVID-19</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row text-justify">
-                    <div class="col-lg-5 offset-lg-1">
-                        <div class="question">
-                            <div class="faq-question-q-box">?</div>
-                            <h4 class="faq-question">Apakah gejala COVID-19?</h4>
-                            <div class="faq-answer mb-4 text-muted">
-                                <p>Orang dengan Covid-19 memiliki berbagai gejala yang dilaporkan - mulai dari gejala ringan hingga penyakit parah. Gejala dapat muncul 2-14 hari setelah terpapar virus. Orang dengan gejala di bawah ini mungkin memiliki Covid-19:</p>
-                                <ul>
-                                    <li>Demam atau kedinginan</li>
-                                    <li>Batuk</li>
-                                    <li>Napas pendek atau sulit bernapas</li>
-                                    <li>Kelelahan</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <div class="faq-question-q-box">?</div>
-                            <h4 class="faq-question">Seberapa bahaya COVID-19 ini?</h4>
-                            <div class="faq-answer mb-4 text-muted">
-                                <p>Seperti penyakit pernapasan lainnya, COVID-19 dapat menyebabkan gejala ringan termasuk pilek sakit tenggorokan, batuk, dan demam. Sekitar 80% kasus dapat pulih tanpa perlu perawatan khusus. Sekitar 1 dari setiap 6 orang mungkin akan menderita sakit yang parah, seperti disertai pneumonia atau kesulitan bernafas, yang biasanya muncul secara bertahap. Walaupun angka kematian penyakit ini masih jarang, namun bagi orang yang berusia lanjut, dan orang-orang dengan kondisi medis yang sudah ada sebelumnya (seperti diabetes, tekanan darah tinggi dan penyakit jantung), mereka biasanya lebih rentan untuk gejala yang lebih parah. Orang yang mengalami demam, batuk, dan sulit bernapas harus segera mendapatkan pertolongan medis.</p>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <div class="faq-question-q-box">?</div>
-                            <h4 class="faq-question">Apakah masker kesehatan dapat mencegah COVID-19</h4>
-                            <div class="faq-answer mb-4 text-muted">
-                                <p>Iya. Namun, Anda dapat menggunakan masker kain (berlapis 3) karena masker kesehatan dibutuhkan oleh petugas medis.</p>
+                <div class="card-body">
+                    <div class="row justify-content-center pt-3">
+                        <div class="col-lg-6">
+                            <div class="text-center mb-5">
+                                <h2>Pertanyaan Seputar COVID-19</h2>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-5">
-                        <div class="question">
-                            <div class="faq-question-q-box">?</div>
-                            <h4 class="faq-question">Apa itu Program Bantuan Sosial PSBB Covid-19?</h4>
-                            <div class="faq-answer mb-4 text-muted">
-                                <p>Program Bantuan Sosial PSBB Covid-19 adalah program bantuan sosial kepada warga/masyarakat di Provinsi DKI Jakarta yang rentan terdampak dalam memenuhi kebutuhan dasar atau kebutuhan pokoknya selama pelaksanaan PSBB. Bantuan yang diberikan bersumber dari APBD dan/atau APBN. Bantuan sosial ini disalurkan dalam bentuk bahan pokok dan/atau bantuan langsung lainnya, yang mekanisme penyalurannya diatur sesuai ketentuan.</p>
+                    
+                    <div class="row text-justify">
+                        <div class="col-lg-5 offset-lg-1">
+                            <div class="question">
+                                <div class="faq-question-q-box">?</div>
+                                <h4 class="faq-question">Apakah gejala COVID-19?</h4>
+                                <div class="faq-answer mb-4 text-muted">
+                                    <p>Orang dengan Covid-19 memiliki berbagai gejala yang dilaporkan - mulai dari gejala ringan hingga penyakit parah. Gejala dapat muncul 2-14 hari setelah terpapar virus. Orang dengan gejala di bawah ini mungkin memiliki Covid-19:</p>
+                                    <ul>
+                                        <li>Demam atau kedinginan</li>
+                                        <li>Batuk</li>
+                                        <li>Napas pendek atau sulit bernapas</li>
+                                        <li>Kelelahan</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="question">
+                                <div class="faq-question-q-box">?</div>
+                                <h4 class="faq-question">Seberapa bahaya COVID-19 ini?</h4>
+                                <div class="faq-answer mb-4 text-muted">
+                                    <p>Seperti penyakit pernapasan lainnya, COVID-19 dapat menyebabkan gejala ringan termasuk pilek sakit tenggorokan, batuk, dan demam. Sekitar 80% kasus dapat pulih tanpa perlu perawatan khusus. Sekitar 1 dari setiap 6 orang mungkin akan menderita sakit yang parah, seperti disertai pneumonia atau kesulitan bernafas, yang biasanya muncul secara bertahap. Walaupun angka kematian penyakit ini masih jarang, namun bagi orang yang berusia lanjut, dan orang-orang dengan kondisi medis yang sudah ada sebelumnya (seperti diabetes, tekanan darah tinggi dan penyakit jantung), mereka biasanya lebih rentan untuk gejala yang lebih parah. Orang yang mengalami demam, batuk, dan sulit bernapas harus segera mendapatkan pertolongan medis.</p>
+                                </div>
+                            </div>
+                            <div class="question">
+                                <div class="faq-question-q-box">?</div>
+                                <h4 class="faq-question">Apakah masker kesehatan dapat mencegah COVID-19</h4>
+                                <div class="faq-answer mb-4 text-muted">
+                                    <p>Iya. Namun, Anda dapat menggunakan masker kain (berlapis 3) karena masker kesehatan dibutuhkan oleh petugas medis.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="question">
-                            <div class="faq-question-q-box">?</div>
-                            <h4 class="faq-question">Berapa jumlah target keluarga penerima Program Bantuan Sosial PSBB COVID-19?</h4>
-                            <div class="faq-answer mb-4 text-muted">
-                                <p>Penerima Program Bantuan Sosial PSBB COVID-19 ditargetkan sebanyak 1,2 juta keluarga miskin dan rentan yang bermukim di Provinsi DKI Jakarta. Data termasuk:</p>
-                                <ol>
-                                    <li>Penerima Bansos existing Jakarta (Termasuk pangan murah, KJP, KLJ, Disablitas dan PKD anak)</li>
-                                    <li>Data Terpadu Kesejahteraan Sosial dari Dinsos dan Kemensos</li>
-                                    <li>Data pekerja terdampak COVID-19 oleh Dinas Tenaga Kerja</li>
-                                </ol>
+    
+                        <div class="col-lg-5">
+                            <div class="question">
+                                <div class="faq-question-q-box">?</div>
+                                <h4 class="faq-question">Apa itu Program Bantuan Sosial PSBB Covid-19?</h4>
+                                <div class="faq-answer mb-4 text-muted">
+                                    <p>Program Bantuan Sosial PSBB Covid-19 adalah program bantuan sosial kepada warga/masyarakat di Provinsi DKI Jakarta yang rentan terdampak dalam memenuhi kebutuhan dasar atau kebutuhan pokoknya selama pelaksanaan PSBB. Bantuan yang diberikan bersumber dari APBD dan/atau APBN. Bantuan sosial ini disalurkan dalam bentuk bahan pokok dan/atau bantuan langsung lainnya, yang mekanisme penyalurannya diatur sesuai ketentuan.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="question">
-                            <div class="faq-question-q-box">?</div>
-                            <h4 class="faq-question">Di manakah saya bisa mendapatkan media edukasi dan informasi serta situasi perkembangan COVID-19?</h4>
-                            <div class="faq-answer mb-4 text-muted">
-                                <p>Informasi tentang media KIE atau situasi perkembangan COVID-19, dapat diakses melalui:</p>
-                                <p>Halo Kemenkes: 1500567</p>
-                                <p>Hotline Emergency Operation Center (EOC): 119 atau (021) 521 0411 atau 0812 1212 3119</p>
+                            <div class="question">
+                                <div class="faq-question-q-box">?</div>
+                                <h4 class="faq-question">Berapa jumlah target keluarga penerima Program Bantuan Sosial PSBB COVID-19?</h4>
+                                <div class="faq-answer mb-4 text-muted">
+                                    <p>Penerima Program Bantuan Sosial PSBB COVID-19 ditargetkan sebanyak 1,2 juta keluarga miskin dan rentan yang bermukim di Provinsi DKI Jakarta. Data termasuk:</p>
+                                    <ol>
+                                        <li>Penerima Bansos existing Jakarta (Termasuk pangan murah, KJP, KLJ, Disablitas dan PKD anak)</li>
+                                        <li>Data Terpadu Kesejahteraan Sosial dari Dinsos dan Kemensos</li>
+                                        <li>Data pekerja terdampak COVID-19 oleh Dinas Tenaga Kerja</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="question">
+                                <div class="faq-question-q-box">?</div>
+                                <h4 class="faq-question">Di manakah saya bisa mendapatkan media edukasi dan informasi serta situasi perkembangan COVID-19?</h4>
+                                <div class="faq-answer mb-4 text-muted">
+                                    <p>Informasi tentang media KIE atau situasi perkembangan COVID-19, dapat diakses melalui:</p>
+                                    <p>Halo Kemenkes: 1500567</p>
+                                    <p>Hotline Emergency Operation Center (EOC): 119 atau (021) 521 0411 atau 0812 1212 3119</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -306,88 +315,136 @@
     </section>
     <!-- FAQ section end -->
 
-    <!-- kolom informasi section start -->
-    <section class="section" id="informasi">
+    <!-- <div class="bg-shape">
+        <img src="assets_landing/images/bg-shape.png" alt="" class="img-fluid mx-auto d-block">
+    </div> -->
 
+    <!-- kolom informasi section start -->
+    <section class="section bg-white" id="informasi">
+        <div class="container-fluid">
+            <div class="info-title">
+                <h2>Kolom Informasi</h2>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <div class="pusat-informasi">
+                        <div class="info-wrapper">
+                            <img src="assets_landing/images/collection/kolom_informasi/cuci-tangan.png" alt="cuci-tangan" height="180">
+                            <h3 class="w-50 text-left">Cucilah tangan anda dengan sabun secara rutin</h3>
+                        </div>
+                    </div>
+                    <div class="pusat-informasi">
+                        <div class="info-wrapper">
+                            <h3 class="w-50 text-right">Hindari aktifitas berkerumun apabila tidak diperlukan</h3>
+                            <img src="assets_landing/images/collection/kolom_informasi/hindari-berkerumun.png" alt="hindari-berkerumun" height="180">
+                        </div>
+                    </div>
+                    <div class="pusat-informasi">
+                        <div class="info-wrapper">
+                            <img src="assets_landing/images/collection/kolom_informasi/pakai-masker.png" alt="pakai-masker" height="180">
+                            <h3 class="w-50 text-left">Gunakan masker ketika sedang berpergian keluar rumah</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpemerintahkotasurakarta&tabs=timeline&width=350&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="350" height="500" class="fb-sosmed" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- kolom informasi section end -->
 
     <!-- bansos section start -->
     <section class="section bg-light" id="bansos">
         <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="text-center mb-4">
-                        <h3>What our Users Says</h3>
-                        <p class="text-muted">The clean and well commented code allows easy customization of the theme.It's designed for describing your app, agency or business.</p>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row justify-content-center py-3">
+                        <div class="col-10">
+                            <div class="text-center mb-4">
+                                <h2>BANTUAN SOSIAL</h2>
+                                <p class="text-muted">Daftar penerima bantuan sosial dari pemerintah melalui Gugus Tugas Percepatan dan Penanganan COVID-19 Pemerintah Kota Surakarta.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-11">
+                            <div class="table">
+                                <table id="tabel-bansos" class="table table-bordered table-hover no-footer text-center" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Tanggal</th>
+                                            <th>Pemberi Bantuan</th>
+                                            <th>Jenis Bantuan</th>
+                                            <th>Jumlah</th>
+                                            <th>Nilai Bantuan</th>
+                                            <th>Pendistribusian</th>
+                                            <th>Catatan</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>01</td>
+                                            <td>2011/04/25</td>
+                                            <td>PMS</td>
+                                            <td>Termometer Digital</td>
+                                            <td>15</td>
+                                            <td>Rp. 123.000</td>
+                                            <td>DKK</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>02</td>
+                                            <td>2011/07/25</td>
+                                            <td>PMI</td>
+                                            <td>Alat Pelindung Diri</td>
+                                            <td>170</td>
+                                            <td>Rp. 123.000</td>
+                                            <td>DKK</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>03</td>
+                                            <td>2009/01/12</td>
+                                            <td>Kadin Surakarta</td>
+                                            <td>Masker</td>
+                                            <td>4.000</td>
+                                            <td>Rp. 123.000</td>
+                                            <td>DKK</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>04</td>
+                                            <td>2009/01/12</td>
+                                            <td>Kadin Surakarta</td>
+                                            <td>Sabun Antiseptic</td>
+                                            <td>720</td>
+                                            <td>Rp. 123.000</td>
+                                            <td>DKK</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>05</td>
+                                            <td>2009/01/12</td>
+                                            <td>Kadin Surakarta</td>
+                                            <td>Hand Sanitizer</td>
+                                            <td>300</td>
+                                            <td>Rp. 123.000</td>
+                                            <td>DKK</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- end row -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="testi-box mt-4">
-                        <div class="testi-desc bg-white p-4">
-                            <p class="text-muted mb-0">" Excellent support for a tricky issue related to our customization of the template. Author kept us updated as he made progress on the issue and emailed us a patch when he was done. "</p>
-                        </div>
-                        <div class="p-4">
-                            <div class="testi-img float-left mr-2">
-                                <img src="assets_landing/images/testi/img-2.png" alt="" class="rounded-circle">
-                            </div>
-                            <div>
-                                <h5 class="mb-0">Michael Morrell</h5>
-                                <p class="text-muted m-0"><small>- Ubold User</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end col -->
-                <div class="col-lg-4">
-                    <div class="testi-box mt-4">
-                        <div class="testi-desc bg-white p-4">
-                            <p class="text-muted mb-0">" Flexible, Everything is in, Suuuuuper light, even for the code is much easier to cut and make it a theme for a productive app. "</p>
-                        </div>
-                        <div class="p-4">
-                            <div class="testi-img float-left mr-2">
-                                <img src="assets_landing/images/testi/img-1.png" alt="" class="rounded-circle">
-                            </div>
-                            <div>
-                                <h5 class="mb-0">John Seidel</h5>
-                                <p class="text-muted m-0"><small>- Ubold User</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end col -->
-                <div class="col-lg-4">
-                    <div class="testi-box mt-4">
-                        <div class="testi-desc bg-white p-4">
-                            <p class="text-muted mb-0">" Not only the code, design and support are awesome, but they also update it constantly the template with new content, new plugins. I will buy surely another coderthemes template! "</p>
-                        </div>
-                        <div class="p-4">
-                            <div class="testi-img float-left mr-2">
-                                <img src="assets_landing/images/testi/img-3.png" alt="" class="rounded-circle">
-                            </div>
-                            <div>
-                                <h5 class="mb-0">Robert Taylor</h5>
-                                <p class="text-muted m-0"><small>- Ubold User</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end col -->
-            </div> 
-            <!-- end row -->
         </div> 
         <!-- end container-fluid -->
     </section>
     <!-- bansos section end -->
-
-    <section id="sosial-media">
-        <div class="container-fluid">
-            
-        </div>
-    </section>
 
     <!-- footer start -->
     <footer class="bg-dark footer">
@@ -402,14 +459,33 @@
                         <p class="text-white-50">Pusat Informasi Penyebaran Covid-19 Kota Surakarta dan sekitarnya</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-2">
                     <div class="footer-list">
-                        <p class="text-white mb-2 footer-list-title">Link Dinas</p>
+                        <p class="text-white mb-2 footer-list-title">Tautan Dinas Terkait</p>
                         <ul class="list-unstyled">
                             <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>BPPKAD</a></li>
                             <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>DLH</a></li>
                             <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>DISPENDUKCAPIL</a></li>
                             <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>DISNAKERPERIN</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2">
+                    <div class="footer-list">
+                        <ul class="list-unstyled mt-4">
+                            <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>PPID</a></li>
+                            <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>DISPARTA</a></li>
+                            <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>JDIH</a></li>
+                            <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>ORGANISASI</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2">
+                    <div class="footer-list">
+                        <ul class="list-unstyled mt-4">
+                            <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>LPSE</a></li>
+                            <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>DPPKB</a></li>
+                            <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>DPRD</a></li>
                         </ul>
                     </div>
                 </div>
@@ -441,7 +517,7 @@
     <!-- footer end -->
     
     <!-- Back to top -->    
-    <a href="#" class="back-to-top" id="back-to-top"> <i class="mdi mdi-chevron-up"> </i> </a>
+    <a href="#" class="back-to-top btn-danger" id="back-to-top"> <i class="mdi mdi-chevron-up"> </i> </a>
     
     <!-- javascript -->
     <script src="assets_landing/js/jquery.min.js"></script>
@@ -452,5 +528,13 @@
     <!-- custom js -->
     <script src="assets_landing/js/app.js"></script>
 
+    <!-- datatable -->
+    <script src="assets_landing/js/jquery.dataTables.min.js"></script>
+    <script src="assets_landing/js/dataTables.bootstrap4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#tabel-bansos').DataTable();
+        });
+    </script>
 </body>
 </html>

@@ -61,6 +61,7 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 14px;
   background-color: #ffffff;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -557,11 +558,12 @@ p {
   }
 }
 
-@media (min-width: 200px) and (max-width: 768px) {
+@media (min-width: 200px) and (max-width: 968px) {
   .navbar-custom {
     margin-top: 0px;
     padding: 10px 0px !important;
     background-color: #ffffff !important;
+    color: #000 !important;
     -webkit-box-shadow: 0 10px 33px -14px rgba(0, 0, 0, 0.1);
             box-shadow: 0 10px 33px -14px rgba(0, 0, 0, 0.1);
   }
@@ -579,7 +581,7 @@ p {
     padding: 6px 0px;
   }
   .navbar-custom .navbar-nav .nav-item.active .nav-link {
-    color: #673ab7 !important;
+    color: #000 !important;
   }
   .navbar-toggler {
     font-size: 24px;
