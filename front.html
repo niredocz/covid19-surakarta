@@ -3,18 +3,20 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Data statistik Covid-19 kota Surakarta tahun 2021" name="description"/>
+    <meta content="Data statistik COVID-19 kota Surakarta tahun 2021" name="description"/>
     <meta content="tim-covid-19-surakarta" name="author"/>
     <meta content="covid19, surakarta, corona, covid-19" name="keywords">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
-    <title>Halaman Utama | Pusat Informasi dan Koordinasi Covid-19 Kota Surakarta tahun 2021</title>
+    <title>Halaman Utama | Pusat Informasi dan Koordinasi COVID-19 Kota Surakarta tahun 2021</title>
 
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets_landing/images/weblogo.svg">
     <!-- Datatable library css -->
     <link rel="stylesheet" href="assets_landing/css/twitter-bootstrap4.css">
     <link rel="stylesheet" href="assets_landing/css/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/rowreorder/1.2.7/css/rowReorder.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.7/css/responsive.dataTables.min.css">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="assets_landing/css/bootstrap.min.css" type="text/css">
     <!--Material Icon -->
@@ -41,16 +43,16 @@
                         <a href="#beranda" class="nav-link">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#berita" class="nav-link">Berita</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#faq" class="nav-link">FAQ</a>
-                    </li>
-                    <li class="nav-item">
                         <a href="#informasi" class="nav-link">Informasi</a>
                     </li>
                     <li class="nav-item">
                         <a href="#bansos" class="nav-link">Bantuan Sosial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#berita" class="nav-link">Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#faq" class="nav-link">FAQ</a>
                     </li>
                 </ul>
                 <a href="tel:123-456-789" class="btn navbar-btn">
@@ -188,135 +190,17 @@
                     </div>
                 </div>
             </div>
-        </div> <!-- end container-fluid -->
-    </section>
-
-    <!-- berita section start -->
-    <section class="section-sm bg-light" id="berita">
-        <div class="container-fluid">
-            <div class="berita-wrapper">
-                <h2 class="berita-title">Berita Terbaru</h2>
-                <div class="row">
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="card">
-                            <img src="assets_landing/images/berita/berita-1.jpeg" alt="berita-1" class="card-img-top">
-                            <div class="card-body">
-                                <h4>Thermal Gun Aman Digunakan</h4>
-                                <p class="berita-content">Sejak pandemi COVID-19 berlangsung, melakukan pengecekan suhu di ruang publik sebagai tindakan preventif bagian dari penanganan COVID-19 sudah menjadi hal lumrah. Untuk mengurangi kontak fisik, maka penggunaan thermal gun yang diarahkan ke dahi juga sudah menjadi hal yang biasa dilihat.</p>
-                                <a href="#" class="btn btn-info">Kunjungi Berita</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="card">
-                            <img src="assets_landing/images/berita/berita-2.jpeg" alt="berita-2" class="card-img-top">
-                            <div class="card-body">
-                                <h4>Tempat Karantina Graha Wisata Ditutup, Pemudik Wajib Karantina di Rumah</h4>
-                                <p class="berita-content">Rumah karantina Graha Wisata yang disediakan Pemerintah Kota Surakarta khusus bagi pemudik, hari ini Jum’at (29/5/2020) resmi diakhiri.</p>
-                                <a href="#" class="btn btn-info">Kunjungi Berita</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="card">
-                            <img src="assets_landing/images/berita/berita-3.jpeg" alt="berita-3" class="card-img-top">
-                            <div class="card-body">
-                                <h4>Wali Kota, Wakil Wali Kota, Sekda dan Awak Media di Balai Kota Jalani Rapid Test</h4>
-                                <p class="berita-content">Rabu (27/5/2020) mulai jam 08.00 WIB bertempat di Gedung Dinas Kesehatan Kota Surakarta, Wali Kota, Wakil Wali Kota, Sekretaris Daerah beserta staf serta awak media yang bertugas di lingkungan balaikota dilakukan rapid test.</p>
-                                <a href="#" class="btn btn-info">Kunjungi Berita</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- end container-fluid -->
-    </section>
-    <!-- berita section end -->
-
-    <!-- FAQ section start -->
-    <section class="section bg-theme pb-5" id="faq">
-        <div class="container-fluid">
-            <div class="card">
-                <div class="card-body">
-                    <div class="row justify-content-center pt-3">
-                        <div class="col-lg-6">
-                            <div class="text-center mb-5">
-                                <h2>Pertanyaan Seputar COVID-19</h2>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="row text-justify">
-                        <div class="col-lg-5 offset-lg-1">
-                            <div class="question">
-                                <div class="faq-question-q-box">?</div>
-                                <h4 class="faq-question">Apakah gejala COVID-19?</h4>
-                                <div class="faq-answer mb-4 text-muted">
-                                    <p>Orang dengan Covid-19 memiliki berbagai gejala yang dilaporkan - mulai dari gejala ringan hingga penyakit parah. Gejala dapat muncul 2-14 hari setelah terpapar virus. Orang dengan gejala di bawah ini mungkin memiliki Covid-19:</p>
-                                    <ul>
-                                        <li>Demam atau kedinginan</li>
-                                        <li>Batuk</li>
-                                        <li>Napas pendek atau sulit bernapas</li>
-                                        <li>Kelelahan</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="question">
-                                <div class="faq-question-q-box">?</div>
-                                <h4 class="faq-question">Seberapa bahaya COVID-19 ini?</h4>
-                                <div class="faq-answer mb-4 text-muted">
-                                    <p>Seperti penyakit pernapasan lainnya, COVID-19 dapat menyebabkan gejala ringan termasuk pilek sakit tenggorokan, batuk, dan demam. Sekitar 80% kasus dapat pulih tanpa perlu perawatan khusus. Sekitar 1 dari setiap 6 orang mungkin akan menderita sakit yang parah, seperti disertai pneumonia atau kesulitan bernafas, yang biasanya muncul secara bertahap. Walaupun angka kematian penyakit ini masih jarang, namun bagi orang yang berusia lanjut, dan orang-orang dengan kondisi medis yang sudah ada sebelumnya (seperti diabetes, tekanan darah tinggi dan penyakit jantung), mereka biasanya lebih rentan untuk gejala yang lebih parah. Orang yang mengalami demam, batuk, dan sulit bernapas harus segera mendapatkan pertolongan medis.</p>
-                                </div>
-                            </div>
-                            <div class="question">
-                                <div class="faq-question-q-box">?</div>
-                                <h4 class="faq-question">Apakah masker kesehatan dapat mencegah COVID-19</h4>
-                                <div class="faq-answer mb-4 text-muted">
-                                    <p>Iya. Namun, Anda dapat menggunakan masker kain (berlapis 3) karena masker kesehatan dibutuhkan oleh petugas medis.</p>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="col-lg-5">
-                            <div class="question">
-                                <div class="faq-question-q-box">?</div>
-                                <h4 class="faq-question">Apa itu Program Bantuan Sosial PSBB Covid-19?</h4>
-                                <div class="faq-answer mb-4 text-muted">
-                                    <p>Program Bantuan Sosial PSBB Covid-19 adalah program bantuan sosial kepada warga/masyarakat di Provinsi DKI Jakarta yang rentan terdampak dalam memenuhi kebutuhan dasar atau kebutuhan pokoknya selama pelaksanaan PSBB. Bantuan yang diberikan bersumber dari APBD dan/atau APBN. Bantuan sosial ini disalurkan dalam bentuk bahan pokok dan/atau bantuan langsung lainnya, yang mekanisme penyalurannya diatur sesuai ketentuan.</p>
-                                </div>
-                            </div>
-                            <div class="question">
-                                <div class="faq-question-q-box">?</div>
-                                <h4 class="faq-question">Berapa jumlah target keluarga penerima Program Bantuan Sosial PSBB COVID-19?</h4>
-                                <div class="faq-answer mb-4 text-muted">
-                                    <p>Penerima Program Bantuan Sosial PSBB COVID-19 ditargetkan sebanyak 1,2 juta keluarga miskin dan rentan yang bermukim di Provinsi DKI Jakarta. Data termasuk:</p>
-                                    <ol>
-                                        <li>Penerima Bansos existing Jakarta (Termasuk pangan murah, KJP, KLJ, Disablitas dan PKD anak)</li>
-                                        <li>Data Terpadu Kesejahteraan Sosial dari Dinsos dan Kemensos</li>
-                                        <li>Data pekerja terdampak COVID-19 oleh Dinas Tenaga Kerja</li>
-                                    </ol>
-                                </div>
-                            </div>
-                            <div class="question">
-                                <div class="faq-question-q-box">?</div>
-                                <h4 class="faq-question">Di manakah saya bisa mendapatkan media edukasi dan informasi serta situasi perkembangan COVID-19?</h4>
-                                <div class="faq-answer mb-4 text-muted">
-                                    <p>Informasi tentang media KIE atau situasi perkembangan COVID-19, dapat diakses melalui:</p>
-                                    <p>Halo Kemenkes: 1500567</p>
-                                    <p>Hotline Emergency Operation Center (EOC): 119 atau (021) 521 0411 atau 0812 1212 3119</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-        <!-- end container-fluid -->
     </section>
-    <!-- FAQ section end -->
 
     <!-- kolom informasi section start -->
     <section class="section bg-white" id="informasi">
+        <div class="bg-shape-atas">
+            <img src="assets_landing/images/collection/shape-red-2.png" class="img-fluid mx-auto d-block">
+        </div>
+        <div class="bg-shape">
+            <img src="assets_landing/images/collection/shape-1.png" class="img-fluid mx-auto d-block">
+        </div>
         <div class="container-fluid">
             <div class="info-title">
                 <h2>Kolom Informasi</h2>
@@ -343,7 +227,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 offset-md-1">
+                <div class="col-12 col-md-4 offset-md-1 mt-3">
                     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpemerintahkotasurakarta&tabs=timeline&width=350&height=530&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="350" height="540" class="fb-sosmed" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                 </div>
             </div>
@@ -352,7 +236,7 @@
     <!-- kolom informasi section end -->
 
     <!-- bansos section start -->
-    <section class="section bg-light" id="bansos">
+    <section class="section bg-light pb-1" id="bansos">
         <div class="container-fluid">
             <div class="card">
                 <div class="card-body">
@@ -367,7 +251,7 @@
                     <div class="row justify-content-center">
                         <div class="col-11">
                             <div class="table">
-                                <table id="tabel-bansos" class="table table-bordered table-hover no-footer text-center" style="width:100%">
+                                <table id="tabel-bansos" class="table table-bordered table-hover no-footer" style="width:100%">
                                     <thead>
                                         <tr>
                                             <th>No</th>
@@ -443,6 +327,143 @@
     </section>
     <!-- bansos section end -->
 
+    <!-- berita section start -->
+    <section class="section-sm bg-light mt-0" id="berita">
+        <div class="bg-shape">
+            <img src="assets_landing/images/collection/shape-red-1.png" alt="" class="img-fluid mx-auto d-block">
+        </div>
+        <div class="container-fluid">
+            <div class="berita-wrapper justify-content-center">
+                <div class="card">
+                    <h2 class="text-center p-2">Berita Terbaru</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card card-berita">
+                            <img src="assets_landing/images/berita/berita-1.jpeg" alt="berita-1" class="card-img-top">
+                            <div class="card-body">
+                                <a class="link-berita" href="#">
+                                    <h4>Thermal Gun Aman Digunakan</h4>
+                                </a>
+                                <p class="berita-content">Sejak pandemi COVID-19 berlangsung, melakukan pengecekan suhu di ruang publik sebagai tindakan preventif bagian dari penanganan COVID-19 sudah menjadi hal lumrah. Untuk mengurangi kontak fisik, maka penggunaan thermal gun yang diarahkan ke dahi juga sudah menjadi hal yang biasa dilihat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card card-berita">
+                            <img src="assets_landing/images/berita/berita-2.jpeg" alt="berita-2" class="card-img-top">
+                            <div class="card-body">
+                                <a href="#" class="link-berita">
+                                    <h4>Tempat Karantina Graha Wisata Ditutup, Pemudik Wajib Karantina di Rumah</h4>
+                                </a>
+                                <p class="berita-content">Rumah karantina Graha Wisata yang disediakan Pemerintah Kota Surakarta khusus bagi pemudik, hari ini Jum’at (29/5/2020) resmi diakhiri.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card card-berita">
+                            <img src="assets_landing/images/berita/berita-3.jpeg" alt="berita-3" class="card-img-top">
+                            <div class="card-body">
+                                <a href="#" class="link-berita">
+                                    <h4>Wali Kota, Wakil Wali Kota, Sekda dan Awak Media di Balai Kota Jalani Rapid Test</h4>
+                                </a>
+                                <p class="berita-content">Rabu (27/5/2020) mulai jam 08.00 WIB bertempat di Gedung Dinas Kesehatan Kota Surakarta, Wali Kota, Wakil Wali Kota, Sekretaris Daerah beserta staf serta awak media yang bertugas di lingkungan balaikota dilakukan rapid test.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <a href="#" class="btn btn-info">Kunjungi Berita Lainnya</a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end container-fluid -->
+    </section>
+    <!-- berita section end -->
+
+    <!-- FAQ section start -->
+    <section class="section bg-theme pb-2" id="faq">
+        <div class="container-fluid">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row justify-content-center pt-3">
+                        <div class="col-lg-6">
+                            <div class="text-center mb-5">
+                                <h2>Pertanyaan Seputar COVID-19</h2>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row text-justify">
+                        <div class="col-lg-5 offset-lg-1">
+                            <div class="question">
+                                <div class="faq-question-q-box">?</div>
+                                <h4 class="faq-question">Apakah gejala COVID-19?</h4>
+                                <div class="faq-answer mb-4 text-muted">
+                                    <p>Orang dengan COVID-19 memiliki berbagai gejala yang dilaporkan - mulai dari gejala ringan hingga penyakit parah. Gejala dapat muncul 2-14 hari setelah terpapar virus. Orang dengan gejala di bawah ini mungkin memiliki COVID-19:</p>
+                                    <ul>
+                                        <li>Demam atau kedinginan</li>
+                                        <li>Batuk</li>
+                                        <li>Napas pendek atau sulit bernapas</li>
+                                        <li>Kelelahan</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="question">
+                                <div class="faq-question-q-box">?</div>
+                                <h4 class="faq-question">Seberapa bahaya COVID-19 ini?</h4>
+                                <div class="faq-answer mb-4 text-muted">
+                                    <p>Seperti penyakit pernapasan lainnya, COVID-19 dapat menyebabkan gejala ringan termasuk pilek sakit tenggorokan, batuk, dan demam. Sekitar 80% kasus dapat pulih tanpa perlu perawatan khusus. Sekitar 1 dari setiap 6 orang mungkin akan menderita sakit yang parah, seperti disertai pneumonia atau kesulitan bernafas, yang biasanya muncul secara bertahap. Walaupun angka kematian penyakit ini masih jarang, namun bagi orang yang berusia lanjut, dan orang-orang dengan kondisi medis yang sudah ada sebelumnya (seperti diabetes, tekanan darah tinggi dan penyakit jantung), mereka biasanya lebih rentan untuk gejala yang lebih parah. Orang yang mengalami demam, batuk, dan sulit bernapas harus segera mendapatkan pertolongan medis.</p>
+                                </div>
+                            </div>
+                            <div class="question">
+                                <div class="faq-question-q-box">?</div>
+                                <h4 class="faq-question">Apakah masker kesehatan dapat mencegah COVID-19</h4>
+                                <div class="faq-answer mb-4 text-muted">
+                                    <p>Iya. Namun, Anda dapat menggunakan masker kain (berlapis 3) karena masker kesehatan dibutuhkan oleh petugas medis.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-5">
+                            <div class="question">
+                                <div class="faq-question-q-box">?</div>
+                                <h4 class="faq-question">Apa itu Program Bantuan Sosial PSBB COVID-19?</h4>
+                                <div class="faq-answer mb-4 text-muted">
+                                    <p>Program Bantuan Sosial PSBB COVID-19 adalah program bantuan sosial kepada warga/masyarakat di Provinsi DKI Jakarta yang rentan terdampak dalam memenuhi kebutuhan dasar atau kebutuhan pokoknya selama pelaksanaan PSBB. Bantuan yang diberikan bersumber dari APBD dan/atau APBN. Bantuan sosial ini disalurkan dalam bentuk bahan pokok dan/atau bantuan langsung lainnya, yang mekanisme penyalurannya diatur sesuai ketentuan.</p>
+                                </div>
+                            </div>
+                            <div class="question">
+                                <div class="faq-question-q-box">?</div>
+                                <h4 class="faq-question">Berapa jumlah target keluarga penerima Program Bantuan Sosial PSBB COVID-19?</h4>
+                                <div class="faq-answer mb-4 text-muted">
+                                    <p>Penerima Program Bantuan Sosial PSBB COVID-19 ditargetkan sebanyak 1,2 juta keluarga miskin dan rentan yang bermukim di Provinsi DKI Jakarta. Data termasuk:</p>
+                                    <ol>
+                                        <li>Penerima Bansos existing Jakarta (Termasuk pangan murah, KJP, KLJ, Disablitas dan PKD anak)</li>
+                                        <li>Data Terpadu Kesejahteraan Sosial dari Dinsos dan Kemensos</li>
+                                        <li>Data pekerja terdampak COVID-19 oleh Dinas Tenaga Kerja</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="question">
+                                <div class="faq-question-q-box">?</div>
+                                <h4 class="faq-question">Di manakah saya bisa mendapatkan media edukasi dan informasi serta situasi perkembangan COVID-19?</h4>
+                                <div class="faq-answer mb-4 text-muted">
+                                    <p>Informasi tentang media KIE atau situasi perkembangan COVID-19, dapat diakses melalui:</p>
+                                    <p>Halo Kemenkes: 1500567</p>
+                                    <p>Hotline Emergency Operation Center (EOC): 119 atau (021) 521 0411 atau 0812 1212 3119</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end container-fluid -->
+    </section>
+    <!-- FAQ section end -->
+
     <!-- footer start -->
     <footer class="bg-dark footer">
         <div class="container-fluid">
@@ -453,7 +474,7 @@
                         <h5 class="text-white ml-2">Pemerintah Kota Surakarta</h5>
                     </div>
                     <div class="row">
-                        <p class="text-white-50">Pusat Informasi Penyebaran Covid-19 Kota Surakarta dan sekitarnya</p>
+                        <p class="text-white-50">Pusat Informasi Penyebaran COVID-19 Kota Surakarta dan sekitarnya</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-2">
@@ -491,7 +512,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="float-left pull-none">
-                        <p class="text-white-50">© 2021 Tim Covid-19 Kota Surakarta</p>
+                        <p class="text-white-50">© 2021 Tim COVID-19 Kota Surakarta</p>
                     </div>
                     <div class="float-right pull-none">
                         <ul class="list-inline social-links">
@@ -528,9 +549,16 @@
     <!-- datatable -->
     <script src="assets_landing/js/jquery.dataTables.min.js"></script>
     <script src="assets_landing/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/rowreorder/1.2.7/js/dataTables.rowReorder.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.7/js/dataTables.responsive.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('#tabel-bansos').DataTable();
+            $('#tabel-bansos').DataTable({
+                rowReorder: {
+                selector: 'td:nth-child(2)'
+            },
+            responsive: true
+            });
         });
     </script>
 </body>

@@ -28,6 +28,7 @@
 .nav-sticky.navbar-custom .navbar-nav .nav-item.active .nav-link {
   color: #000;
 }
+
 .nav-sticky.navbar-custom .navbar-nav .nav-item .nav-link:hover,
 .nav-sticky.navbar-custom .navbar-nav .nav-item .nav-link:active {
   color: #000;
@@ -46,49 +47,24 @@ nav.navbar .logo-title {
   margin-bottom: 0.5em;
 }
 
+/* Beranda Section */
 #beranda .home-center .home-desc-center .row,
 .navbar a.logo.row {
   margin-left: 0;
 }
-
-#berita .berita-title {
-  margin-bottom: 1em;
-  margin-top: -1em;
-  display: flex;
-  justify-content: center;
+/* Statistik Section */
+#informasi {
+  padding-top: 0;
+}
+#informasi .bg-shape-atas {
+  bottom: 0px;
+  top: 0px;
 }
 
-#berita .card .card-img-top {
-  height: 15em;
-}
-
-#berita .card .card-body .berita-content {
-  height: 6em;
-  text-align: justify;
-  line-height: 2em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-break: break-all;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-
-  /* number of lines to show */
-  -webkit-line-clamp: 3;
-}
-
-#berita .card .card-body a.btn {
-  width: 75%;
-  margin: 0 30px;
-}
-
-#bansos .page-item.active .page-link {
-  background-color: #ee3629;
-  border-color: #d62f24;
-}
-
+/* Informasi Section */
 #informasi .info-title {
   text-align: center;
-  margin-top: -2em;
+  margin-top: 2em;
   padding-bottom: 2em;
 }
 
@@ -102,9 +78,62 @@ nav.navbar .logo-title {
   border: 1px solid #fff;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 0 15px 1px #757474a6;
+  /* box-shadow: 0 0 15px 1px #757474a6; */
+  box-shadow: 0 0 4px 4px #7979793a;
 }
 
+/* Bansos Section */
+#bansos .page-item.active .page-link {
+  background-color: #ee3629;
+  border-color: #d62f24;
+}
+
+/* Berita Section */
+#berita .berita-title {
+  margin-bottom: 1em;
+  margin-top: -1em;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 0 0 3px 3px #79797936;
+}
+
+#berita .card .card-img-top {
+  height: 15em;
+}
+
+#berita .card .card-body h4 {
+  color: rgb(0, 110, 255);
+  font-weight: 600;
+}
+
+#berita .card .card-body a h4:hover {
+  text-decoration: underline;
+}
+
+#berita .card .card-body .berita-content {
+  height: 5em;
+  text-align: justify;
+  line-height: 1.75em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* number of lines to show */
+  -webkit-line-clamp: 3;
+}
+
+#berita .card .card-body a.btn {
+  width: 75%;
+  margin: 0 30px;
+}
+
+/* FAQ Section */
+
+/* Footer Section */
 .footer-surakarta {
   margin-bottom: 3em;
 }
@@ -115,4 +144,24 @@ nav.navbar .logo-title {
 
 .back-to-top:hover {
   background: #000;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .bg-home {
+    padding: 100px 0 50px 0;
+  }
+  nav.navbar .logo .logo-title {
+    color: #000;
+  }
+
+  #informasi .fb-sosmed {
+    height: 450px !important;
+    width: 100% !important;
+  }
+
+  #informasi .pusat-informasi .info-wrapper img {
+    width: 6em;
+    height: auto;
+  }
 }
