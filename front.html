@@ -7,7 +7,6 @@
     <meta content="tim-covid-19-surakarta" name="author"/>
     <meta content="covid19, surakarta, corona, covid-19" name="keywords">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-
     <title>Halaman Utama | Pusat Informasi dan Koordinasi COVID-19 Kota Surakarta tahun 2021</title>
 
     <!-- App favicon -->
@@ -74,7 +73,7 @@
                             <div class="home-title mo-mb-20">
                                 <h1 class="mb-3 text-white">Pusat Informasi & Koordinasi Penyebaran COVID-19 Kota Surakarta</h1>
                                 <p class="text-white home-desc">Menyediakan informasi terkini seputar penyebaran virus COVID-19 di Kota Surakarta dan sekitarnya</p>
-                                <a href="dashboard.html" class="btn navbar-btn w-75 font-weight-bold p-2 mb-4">Halaman Informasi COVID-19 Kota Surakarta</a>
+                                <a href="dashboard.html" class="btn btn-info w-75 font-weight-bold p-2 mb-4">Halaman Informasi COVID-19 Kota Surakarta</a>
                             </div>
                         </div>
                         <div class="d-none d-md-block col-md-6 col-lg-4 offset-lg-2 offset-md-1">
@@ -84,6 +83,7 @@
                         </div>
                     </div>
                     <!-- end row -->
+                    <!-- <h3 class="text-white text-center">Data Pantauan COVID-19 Kota Surakarta</h3> -->
                 </div>
                 <!-- end container-fluid -->
             </div>
@@ -91,115 +91,194 @@
     </section>
     <!-- beranda end -->
 
+    <!-- Statistik start -->
     <section class="bg-theme" id="statistik">
         <div class="container-fluid">
-            <div class="clients p-2 text-center">
+            <div class="clients p-2">
                 <div class="row">
-                    <div class="col-12 col-sm-4">
+                    <div class="col-12 col-md-4">
                         <div class="card">
                             <div class="card-body">
-                                <h3>Konfirmasi</h3>
-                                <div class="row counter-wrapper">
-                                    <div class="col-6">
+                                <h3 class="text-center">Konfirmasi</h3>
+                                <hr>
+                                <!-- <div class="peringatan mx-1 text-center">
+                                    <h5>Klik tombol dibawah untuk melihat informasi</h5>
+                                </div> -->
+                                <div class="row counter-wrapper align-items-center">
+                                    <div class="col-12">
                                         <div class="counter">
-                                            <h4>Pasien Sembuh</h4>
-                                            <span>3913</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="counter">
-                                            <h4>Isolasi Mandiri</h4>
-                                            <span>6471</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="counter">
-                                            <h4>Perawatan</h4>
-                                            <span>3019</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="counter">
-                                            <h4>Meninggal</h4>
-                                            <span>3019</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3>Suspect</h3>
-                                <div class="row counter-wrapper">
-                                    <div class="col-6">
-                                        <div class="counter">
-                                            <h4>Discarded</h4>
-                                            <span>3019</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="counter">
-                                            <h4>Isolasi Mandiri</h4>
-                                            <span>2471</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="counter">
-                                            <h4>Perawatan</h4>
-                                            <span>6</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="counter">
-                                            <h4>Meninggal</h4>
-                                            <span>3019</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3>Probable</h3>
-                                <div class="row counter-wrapper">
-                                    <div class="col-6">
-                                        <div class="counter">
-                                            <h4>Pasien Sembuh</h4>
-                                            <span>3913</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="counter">
-                                            <h4>Perawatan</h4>
-                                            <span>6471</span>
+                                            <div class="row">
+                                                <h4 class="col-7 text-center">Pasien Sembuh</h4>
+                                                <p class="col-5 pasien-counter">3913 <span class="text-success">(+350)<i class="mdi mdi-arrow-up"></i></span></p>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="counter">
-                                            <h4>Meninggal</h4>
-                                            <span>30</span>
+                                            <div class="row">
+                                                <h4 class="col-7 text-center">Isolasi Mandiri</h4>
+                                                <p class="col-5 pasien-counter">6471 <span class="text-danger">(+55)<i class="mdi mdi-arrow-up"></i></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="counter">
+                                            <div class="row">
+                                                <h4 class="col-7 text-center">Perawatan</h4>
+                                                <p class="col-5 pasien-counter">309 <span class="text-success">(-71)<i class="mdi mdi-arrow-down"></i></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="counter">
+                                            <div class="row">
+                                                <h4 class="col-7 text-center">Meninggal</h4>
+                                                <p class="col-5 pasien-counter">4013 <span class="text-warning">(+0)</span></p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <hr>
+                                <div class="collapse-wrapper mt-2 text-center">
+                                    <a class="collapse-btn" href="javascript:void(0);">
+                                        <i class="mdi mdi-collapse"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="text-center">Suspect</h3>
+                                <hr>
+                                <div class="row counter-wrapper">
+                                    <div class="col-12">
+                                        <div class="counter">
+                                            <div class="row">
+                                                <div class="col-7 text-center">
+                                                    <h4>Discarded</h4>
+                                                </div>
+                                                <div class="col-5">
+                                                    <p class="pasien-counter">913 <span class="text-success">(+120)<i class="mdi mdi-arrow-up"></i></span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="counter">
+                                            <div class="row">
+                                                <div class="col-7 text-center">
+                                                    <h4>Isolasi Mandiri</h4>
+                                                </div>
+                                                <div class="col-5">
+                                                    <p class="pasien-counter">671 <span class="text-danger">(+35)<i class="mdi mdi-arrow-up"></i></span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="counter">
+                                            <div class="row">
+                                                <div class="col-7 text-center">
+                                                    <h4>Perawatan</h4>
+                                                </div>
+                                                <div class="col-5">
+                                                    <p class="pasien-counter">6 <span class="text-success">(-71)<i class="mdi mdi-arrow-down"></i></span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="counter">
+                                            <div class="row">
+                                                <div class="col-7 text-center">
+                                                    <h4>Meninggal</h4>
+                                                </div>
+                                                <div class="col-5">
+                                                    <p class="pasien-counter">313 <span class="text-danger">(+1)<i class="mdi mdi-arrow-up"></i></span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="collapse-wrapper mt-2 text-center">
+                                    <a class="collapse-btn" href="javascript:void(0);">
+                                        <i class="mdi mdi-collapse"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="text-center">Probable</h3>
+                                <hr>
+                                <div class="row counter-wrapper">
+                                    <div class="col-12">
+                                        <div class="counter">
+                                            <div class="row">
+                                                <div class="col-7 text-center">
+                                                    <h4>Pasien Sembuh</h4>
+                                                </div>
+                                                <div class="col-5">
+                                                    <p class="pasien-counter">63 <span class="text-success">(+10)<i class="mdi mdi-arrow-up"></i></span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="counter">
+                                            <div class="row">
+                                                <div class="col-7 text-center">
+                                                    <h4>Perawatan</h4>
+                                                </div>
+                                                <div class="col-5">
+                                                    <p class="pasien-counter">71 <span class="text-warning">(+0)</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="counter">
+                                            <div class="row">
+                                                <div class="col-7 text-center">
+                                                    <h4>Meninggal</h4>
+                                                </div>
+                                                <div class="col-5">
+                                                    <p class="pasien-counter">6 <span class="text-warning">(+0)</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="collapse-wrapper mt-2 text-center">
+                                    <a class="collapse-btn" href="javascript:void(0);">
+                                        <i class="mdi mdi-collapse"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                        <a href="https://drive.google.com/file/d/1t6todch3IcatN5qaZY90H0at5xd5e6Eh/view?usp=sharing" class="btn btn-info p-2" target="_blank">Download Data Per Kecamatan</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Statistik end -->
 
     <!-- kolom informasi section start -->
     <section class="section bg-white" id="informasi">
         <div class="bg-shape-atas">
-            <img src="assets_landing/images/collection/shape-red-2.png" class="img-fluid mx-auto d-block">
+            <img src="assets_landing/images/background-shape/bg-shape-red-1.svg" class="img-fluid mx-auto d-block">
         </div>
         <div class="bg-shape">
-            <img src="assets_landing/images/collection/shape-1.png" class="img-fluid mx-auto d-block">
+            <img src="assets_landing/images/background-shape/bg-shape-grey.svg" class="img-fluid mx-auto d-block">
         </div>
         <div class="container-fluid">
             <div class="info-title">
@@ -330,15 +409,13 @@
     <!-- berita section start -->
     <section class="section-sm bg-light mt-0" id="berita">
         <div class="bg-shape">
-            <img src="assets_landing/images/collection/shape-red-1.png" alt="" class="img-fluid mx-auto d-block">
+            <img src="assets_landing/images/background-shape/bg-shape-red-2.svg" alt="" class="img-fluid mx-auto d-block">
         </div>
         <div class="container-fluid">
             <div class="berita-wrapper justify-content-center">
-                <div class="card">
-                    <h2 class="text-center p-2">Berita Terbaru</h2>
-                </div>
+                <h2 class="mb-3">Artikel dan Berita Terbaru</h2>
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-md-4">
+                    <div class="col-12 col-sm-6 col-md-3">
                         <div class="card card-berita">
                             <img src="assets_landing/images/berita/berita-1.jpeg" alt="berita-1" class="card-img-top">
                             <div class="card-body">
@@ -346,10 +423,11 @@
                                     <h4>Thermal Gun Aman Digunakan</h4>
                                 </a>
                                 <p class="berita-content">Sejak pandemi COVID-19 berlangsung, melakukan pengecekan suhu di ruang publik sebagai tindakan preventif bagian dari penanganan COVID-19 sudah menjadi hal lumrah. Untuk mengurangi kontak fisik, maka penggunaan thermal gun yang diarahkan ke dahi juga sudah menjadi hal yang biasa dilihat.</p>
+                                <span class="text-muted"><i class="mdi mdi-history"></i> 5 menit yang lalu</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4">
+                    <div class="col-12 col-sm-6 col-md-3">
                         <div class="card card-berita">
                             <img src="assets_landing/images/berita/berita-2.jpeg" alt="berita-2" class="card-img-top">
                             <div class="card-body">
@@ -357,10 +435,11 @@
                                     <h4>Tempat Karantina Graha Wisata Ditutup, Pemudik Wajib Karantina di Rumah</h4>
                                 </a>
                                 <p class="berita-content">Rumah karantina Graha Wisata yang disediakan Pemerintah Kota Surakarta khusus bagi pemudik, hari ini Jum’at (29/5/2020) resmi diakhiri.</p>
+                                <span class="text-muted"><i class="mdi mdi-history"></i> 15 menit yang lalu</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4">
+                    <div class="col-12 col-sm-6 col-md-3">
                         <div class="card card-berita">
                             <img src="assets_landing/images/berita/berita-3.jpeg" alt="berita-3" class="card-img-top">
                             <div class="card-body">
@@ -368,6 +447,19 @@
                                     <h4>Wali Kota, Wakil Wali Kota, Sekda dan Awak Media di Balai Kota Jalani Rapid Test</h4>
                                 </a>
                                 <p class="berita-content">Rabu (27/5/2020) mulai jam 08.00 WIB bertempat di Gedung Dinas Kesehatan Kota Surakarta, Wali Kota, Wakil Wali Kota, Sekretaris Daerah beserta staf serta awak media yang bertugas di lingkungan balaikota dilakukan rapid test.</p>
+                                <span class="text-muted"><i class="mdi mdi-history"></i> 1 jam yang lalu</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="card card-berita">
+                            <img src="assets_landing/images/berita/berita-4.jpeg" alt="berita-4" class="card-img-top">
+                            <div class="card-body">
+                                <a href="#" class="link-berita">
+                                    <h4>8.500 Vaksin Sinovac Termin Kedua Tiba Di Surakarta</h4>
+                                </a>
+                                <p class="berita-content">Sebanyak 8.500 dosis vaksin Corona Sinovac termin kedua untuk tenaga kesehatan, Selasa (26/1) sudah tiba di kota Surakarta. Walikota Surakarta, FX. Hadi Rudyatmo dan Kepala Dinas Kesehatan Kota Surakarta, Siti Wahyuningsih menerima langsung vaksin Sinovac yang dikirim dari Semarang di UPT Instalasi Farmasi.Vaksin termin kedua ini, prioritas penggunaanya diperuntukkan untuk tenaga medis yang saat ini sudah menerima vaksin pertama tahap kesatu.FX. Hadi Rudyatmo, Walikota Surakarta mengimbau kepada masyarakat untuk mendukung program pemerintah dalam vaksinasi Covid-19. “Kedatangan vaksin termin kedua ini masih kita khususkan bagi tenaga kesehatan yang kemarin sudah menerima penyuntikan tahap pertama. Jadi setiap orang kan mendapatkan jatah dua kali penyuntikan dengan jarak pemberian minimal 14 hari. Dan vaksin ini juga masih diperuntukkan bagi nakes,” jelasnya.Rudy juga menegaskan biarpun sudah mendapatkan vaksin, agar seluruh masyarakat tetap wajib menjalankan protokol kesehatan dengan menerapkan 3M (memakai masker, mencuci tangan pakai sabun, menjaga jarak dan menghindari kerumunan).</p>
+                                <span class="text-muted"><i class="mdi mdi-history"></i> 2 hari yang lalu</span>
                             </div>
                         </div>
                     </div>
@@ -558,6 +650,16 @@
                 selector: 'td:nth-child(2)'
             },
             responsive: true
+            });
+
+            $('.counter-wrapper').hide();
+
+            $('.collapse-btn').click(function(event) {
+                $(this).children().toggleClass('mdi-collapse mdi-collapse active')
+                $(this).parent().siblings('.counter-wrapper').slideToggle(650);
+                $(this).parent().siblings('.peringatan').animate();
+                // $('.counter-wrapper').not(this).slideUp();
+                // $(this).parent().siblings('.counter-wrapper').removeClass('active');
             });
         });
     </script>
