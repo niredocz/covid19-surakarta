@@ -267,4 +267,8 @@ nav.navbar .logo-title {
     width: 6em;
     height: auto;
   }
+
+  #berita .w-25 {
+    width: 100% !important;
+  }
 }
