@@ -89,7 +89,6 @@ nav.navbar .logo-title {
 }
 
 #statistik .card .card-body .counter-wrapper .col-12 {
-  
 }
 
 #statistik .card .card-body .counter-wrapper.active {
@@ -215,12 +214,25 @@ nav.navbar .logo-title {
 
 #berita .berita-wrapper a.btn {
   padding: 0.8em 0;
-  width: 20% !important;
+  width: 20%;
 }
 
 /* FAQ Section */
 #faq .card .card-body {
   padding: 2em;
+}
+
+/* Pengaduan section */
+#pengaduan {
+  padding: 0;
+}
+
+#pengaduan .container-fluid .card {
+  top: -3em;
+}
+
+#pengaduan #submit {
+  width: 50%;
 }
 
 /* Footer Section */
@@ -285,5 +297,17 @@ nav.navbar .logo-title {
 
   #berita .w-25 {
     width: 100% !important;
+  }
+
+  #pengaduan .wrapper.mt-3 {
+    margin-top: 0 !important;
+  }
+
+  #pengaduan #submit {
+    width: 100%;
+  }
+
+  .footer .footer-info {
+    padding-left: 12px;
   }
 }
