@@ -73,7 +73,9 @@
                             <div class="home-title mo-mb-20">
                                 <h1 class="mb-3 text-white">Pusat Informasi & Koordinasi Penyebaran COVID-19 Kota Surakarta</h1>
                                 <p class="text-white home-desc">Menyediakan informasi terkini seputar penyebaran virus COVID-19 di Kota Surakarta dan sekitarnya</p>
-                                <a href="dashboard.html" class="btn btn-info w-75 font-weight-bold p-2 mb-4">Halaman Informasi COVID-19 Kota Surakarta</a>
+                                <div class="btn-informasi">
+                                    <a href="dashboard.html" class="btn navbar-btn w-75 font-weight-bold p-2 mb-4">Halaman Informasi COVID-19 Kota Surakarta</a>
+                                </div>
                             </div>
                         </div>
                         <div class="d-none d-md-block col-md-6 col-lg-4 offset-lg-2 offset-md-1">
@@ -101,9 +103,6 @@
                             <div class="card-body">
                                 <h3 class="text-center">Konfirmasi</h3>
                                 <hr>
-                                <!-- <div class="peringatan mx-1 text-center">
-                                    <h5>Klik tombol dibawah untuk melihat informasi</h5>
-                                </div> -->
                                 <div class="row counter-wrapper align-items-center">
                                     <div class="col-12">
                                         <div class="counter">
@@ -137,12 +136,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <hr>
-                                <div class="collapse-wrapper mt-2 text-center">
-                                    <a class="collapse-btn" href="javascript:void(0);">
-                                        <i class="mdi mdi-collapse"></i>
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -202,12 +195,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <hr>
-                                <div class="collapse-wrapper mt-2 text-center">
-                                    <a class="collapse-btn" href="javascript:void(0);">
-                                        <i class="mdi mdi-collapse"></i>
-                                    </a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -253,12 +240,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <hr>
-                                <div class="collapse-wrapper mt-2 text-center">
-                                    <a class="collapse-btn" href="javascript:void(0);">
-                                        <i class="mdi mdi-collapse"></i>
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -647,20 +628,16 @@
         $(document).ready(function() {
             $('#tabel-bansos').DataTable({
                 rowReorder: {
-                selector: 'td:nth-child(2)'
-            },
-            responsive: true
+                    selector: 'td:nth-child(2)'
+                },
+                responsive: true
             });
 
-            $('.counter-wrapper').hide();
-
-            $('.collapse-btn').click(function(event) {
-                $(this).children().toggleClass('mdi-collapse mdi-collapse active')
-                $(this).parent().siblings('.counter-wrapper').slideToggle(650);
-                $(this).parent().siblings('.peringatan').animate();
-                // $('.counter-wrapper').not(this).slideUp();
-                // $(this).parent().siblings('.counter-wrapper').removeClass('active');
-            });
+            // $('.collapse-btn').click(function(event) {
+            //     $(this).children().toggleClass('mdi-collapse mdi-collapse active')
+            //     $(this).parent().siblings('.counter-wrapper').slideToggle(650);
+            //     $(this).parent().siblings('.peringatan').animate();
+            // });
         });
     </script>
 </body>

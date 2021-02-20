@@ -3,23 +3,13 @@
 }
 
 .bg-theme {
-  background: #d62f24;
+  background: #aa2709;
 }
 
 hr {
   margin: 0 0.5em;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
-}
-
-.navbar-btn {
-  background-color: #3ccc18;
-  transition: 0.3s;
-}
-
-.navbar-btn:hover {
-  color: #fff;
-  background-color: #10b41e;
 }
 
 .btn-info {
@@ -30,6 +20,16 @@ hr {
 .btn-info:hover {
   background-color: rgb(31, 127, 252);
   border-color: rgb(31, 127, 252);
+}
+
+.navbar-btn {
+  background-color: #31cf09;
+  transition: 0.3s;
+}
+
+.navbar-btn:hover {
+  color: #fff;
+  background-color: #1bac27;
 }
 
 .nav-sticky.navbar-custom .navbar-nav .nav-item.active .nav-link {
@@ -104,9 +104,6 @@ nav.navbar .logo-title {
 #statistik .card .collapse-wrapper a.collapse-btn {
   color: #000;
   background: #10b41e;
-}
-
-#statistik .card .collapse-wrapper .mdi-collapse {
 }
 
 #statistik .card .collapse-wrapper .mdi-collapse:hover {
@@ -228,8 +225,37 @@ nav.navbar .logo-title {
   .bg-home {
     padding: 100px 0 50px 0;
   }
+
+  nav.navbar .logo {
+    padding: 0;
+    padding-left: 8px;
+  }
+
+  nav.navbar .logo img {
+    /* width: 80%; */
+    height: 40px;
+  }
   nav.navbar .logo .logo-title {
+    width: 50%;
+    /* margin-left: 1rem !important; */
     color: #000;
+  }
+
+  nav.navbar .navbar-collapse {
+    padding-left: 10px;
+  }
+
+  nav.navbar .navbar-nav .nav-item {
+    margin: 5px 0;
+  }
+
+  nav.navbar .navbar-collapse .navbar-btn {
+    margin-top: 5px;
+  }
+
+  .home-title .btn-informasi {
+    display: flex;
+    justify-content: center;
   }
 
   #informasi .fb-sosmed {
