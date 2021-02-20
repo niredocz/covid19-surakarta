@@ -25,6 +25,7 @@ hr {
 .navbar-btn {
   background-color: #50b238;
   transition: 0.3s;
+  border-radius: 8px;
 }
 
 .navbar-btn:hover {
@@ -51,6 +52,7 @@ nav.navbar .logo-title {
 
 .card {
   box-shadow: 0 0 3px 3px #79797936;
+  border-radius: 8px;
 }
 
 .card .card-body {
@@ -68,7 +70,8 @@ nav.navbar .logo-title {
 
 /* Statistik Section */
 #statistik .card {
-  border-radius: 0;
+  /* border-radius: 0; */
+  /* height: 20em; */
   box-shadow: 0 0 5px 5px #79797967;
 }
 #statistik .card .card-body {
@@ -85,10 +88,8 @@ nav.navbar .logo-title {
   font-weight: 500;
 }
 
-#statistik .card .card-body .counter-wrapper {
-  overflow: hidden;
-  /* max-height: 0; */
-  transition: max-height 0.3s;
+#statistik .card .card-body .counter-wrapper .col-12 {
+  
 }
 
 #statistik .card .card-body .counter-wrapper.active {
@@ -124,7 +125,6 @@ nav.navbar .logo-title {
   -moz-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-  /* transition: 0.3s; */
 }
 
 /* Informasi Section */
@@ -170,17 +170,31 @@ nav.navbar .logo-title {
   justify-content: center;
 }
 
+#berita .card {
+  overflow: hidden;
+}
+
 #berita .card .card-body {
   padding: 1em;
 }
 
 #berita .card .card-img-top {
-  max-height: 12em;
+  height: 12em;
+  object-fit: cover;
 }
 
 #berita .card .card-body h4 {
   color: rgb(0, 110, 255);
   font-weight: 600;
+  height: 3em;
+  line-height: 1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: normal;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* number of lines to show */
+  -webkit-line-clamp: 3;
 }
 
 #berita .card .card-body a h4:hover {
@@ -189,7 +203,6 @@ nav.navbar .logo-title {
 
 #berita .card .card-body .berita-content {
   height: 5em;
-  /* text-align: justify; */
   line-height: 1.75em;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -200,12 +213,15 @@ nav.navbar .logo-title {
   -webkit-line-clamp: 3;
 }
 
-#berita .card .card-body a.btn {
-  width: 75%;
-  margin: 0 30px;
+#berita .berita-wrapper a.btn {
+  padding: 0.8em 0;
+  width: 20% !important;
 }
 
 /* FAQ Section */
+#faq .card .card-body {
+  padding: 2em;
+}
 
 /* Footer Section */
 .footer-surakarta {
@@ -237,7 +253,6 @@ nav.navbar .logo-title {
   }
   nav.navbar .logo .logo-title {
     width: 50%;
-    /* margin-left: 1rem !important; */
     color: #000;
   }
 
